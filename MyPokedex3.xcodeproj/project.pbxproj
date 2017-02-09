@@ -19,6 +19,7 @@
 		E05064A21E4B77C000AC1F36 /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E05064A11E4B77C000AC1F36 /* pokemon.ttf */; };
 		E05064A71E4B7AB700AC1F36 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = E05064A61E4B7AB700AC1F36 /* music.png */; };
 		E05064A91E4B7AF300AC1F36 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E05064A81E4B7AF300AC1F36 /* music.mp3 */; };
+		E07F5C9D1E4D00990021766C /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07F5C9C1E4D00990021766C /* PokemonDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E05064A11E4B77C000AC1F36 /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
 		E05064A61E4B7AB700AC1F36 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
 		E05064A81E4B7AF300AC1F36 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		E07F5C9C1E4D00990021766C /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				E05064831E4B42B200AC1F36 /* ViewController.swift */,
+				E07F5C9C1E4D00990021766C /* PokemonDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				E050649A1E4B5D2900AC1F36 /* PokeCell.swift in Sources */,
 				E05064841E4B42B200AC1F36 /* ViewController.swift in Sources */,
 				E05064821E4B42B200AC1F36 /* AppDelegate.swift in Sources */,
+				E07F5C9D1E4D00990021766C /* PokemonDetailVC.swift in Sources */,
 				E05064971E4B51DA00AC1F36 /* Pokemon.swift in Sources */,
 				E05064A01E4B729800AC1F36 /* csv.swift in Sources */,
 			);
@@ -371,6 +375,7 @@
 				E05064921E4B42B200AC1F36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
