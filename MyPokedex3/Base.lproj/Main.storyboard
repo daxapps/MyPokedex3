@@ -9,6 +9,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="pokemon.ttf">
+            <string>PokemonSolidNormal</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -24,9 +29,30 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="atE-0t-Ivk">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYj-xR-hJP">
+                                        <rect key="frame" x="107" y="13" width="107" height="40"/>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="28"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKv-F7-eH8">
+                                        <rect key="frame" x="273" y="24" width="39" height="33"/>
+                                        <state key="normal" title="Button" image="music.png"/>
+                                        <connections>
+                                            <action selector="musicBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v7k-C6-4bs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="0.94848805670000003" green="0.28875610229999998" blue="0.0030317916529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="ItN-ki-ID2"/>
+                                    <constraint firstItem="jKv-F7-eH8" firstAttribute="bottom" secondItem="atE-0t-Ivk" secondAttribute="bottomMargin" id="MEc-ze-2pM"/>
+                                    <constraint firstItem="jKv-F7-eH8" firstAttribute="trailing" secondItem="atE-0t-Ivk" secondAttribute="trailingMargin" id="Rmk-zL-utW"/>
+                                    <constraint firstItem="PYj-xR-hJP" firstAttribute="centerY" secondItem="atE-0t-Ivk" secondAttribute="centerY" id="ZL5-C2-GJ3"/>
+                                    <constraint firstItem="PYj-xR-hJP" firstAttribute="centerX" secondItem="atE-0t-Ivk" secondAttribute="centerX" id="clM-Cg-4tS"/>
+                                    <constraint firstItem="jKv-F7-eH8" firstAttribute="top" secondItem="atE-0t-Ivk" secondAttribute="top" constant="24" id="gpY-LK-biP"/>
+                                    <constraint firstItem="jKv-F7-eH8" firstAttribute="leading" secondItem="PYj-xR-hJP" secondAttribute="trailing" constant="59" id="mQc-Q6-qkH"/>
                                 </constraints>
                             </view>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="IfD-1y-pDl">
@@ -119,5 +145,6 @@
     <resources>
         <image name="4" width="120" height="120"/>
         <image name="bg" width="1920" height="1200"/>
+        <image name="music.png" width="100" height="100"/>
     </resources>
 </document>
