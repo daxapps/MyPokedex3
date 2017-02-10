@@ -161,6 +161,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrN-AH-st7">
                                         <rect key="frame" x="15" y="24" width="38" height="29"/>
                                         <state key="normal" title="Button" image="back"/>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="j7u-Jv-vPy" eventType="touchUpInside" id="QJZ-qy-vlF"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ivysaur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usV-lC-LPe">
                                         <rect key="frame" x="103" y="17.5" width="115" height="39.5"/>
@@ -418,7 +421,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="attackLbl" destination="E6l-BS-uNJ" id="Qkv-jt-avX"/>
+                        <outlet property="currentEvoImg" destination="bjx-C3-lEO" id="joY-IC-EnK"/>
+                        <outlet property="defenseLbl" destination="dNc-8p-Wp7" id="CHl-BA-gxU"/>
+                        <outlet property="descriptionLbl" destination="GU6-mM-14l" id="oBa-kh-XDI"/>
+                        <outlet property="evoLbl" destination="WDW-kL-cdq" id="Sx7-OY-c8P"/>
+                        <outlet property="heightLbl" destination="ZYD-EC-gca" id="AVX-1i-Zey"/>
+                        <outlet property="mainImg" destination="kU9-Jy-HIc" id="3qp-h5-mTz"/>
                         <outlet property="nameLbl" destination="usV-lC-LPe" id="aDp-Oj-fFU"/>
+                        <outlet property="nextEvoImg" destination="Tju-Q8-eup" id="tR7-Ea-ANT"/>
+                        <outlet property="pokedexLbl" destination="rag-YL-hSo" id="E7U-8f-fMU"/>
+                        <outlet property="typeLbl" destination="bI4-L1-jhJ" id="VPF-KH-NU8"/>
+                        <outlet property="weightLbl" destination="Ank-67-j04" id="2cI-Yh-Pvk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BNa-io-aci" userLabel="First Responder" sceneMemberID="firstResponder"/>
